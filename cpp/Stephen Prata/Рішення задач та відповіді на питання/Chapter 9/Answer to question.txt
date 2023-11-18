@@ -1,0 +1,185 @@
+
+1)  Який тип пам'ять ви використаєте в наступних варіантах?
+    a) homer - це формальний аргумент функції.
+        Автоматичну (локальну) пам'ять
+    b) Змінна secret повинна викорстовуватись в двух файлах.
+        Зовнішне прив'язування з використанням extern
+    c) Змінна topsecret повинна быть доступна функциям одного файла, по
+    скрыта от других файлов.
+        Статична пам'ять
+    d) Змінна beencalled фиксирует количество вызовов функции, которая ее содержит. 
+        Локальна статична пам'ять
+
+2) Опишіть відмінності між об'явлення using та директивою using
+
+    директива using включає всі імена що є в простері імен
+    а об'євлення using включає лише то ім'я яке ми об'явили
+
+3) Перепишіть наступний код не використовуючи using 
+    #include <iostream> 
+    using namespace std; 
+    int main () 
+    { 
+        double х; 
+        cout << "Enter value: "; 
+        while (!(cin » х)) 
+        {   
+            cout << "Bad input. Please enter а number: "; // Неправильний ввід 
+            cin.clear(); 
+            while (cin.get() != '\n') 
+                continue; 
+        } 
+        cout << "Value = " << х << endl ; 
+        return 0;
+    }
+
+    #include <iostream>  
+    int main () 
+    { 
+        double х; 
+        std::cout << "Enter value: "; 
+        while (!(cin » х)) 
+        {   
+            std::cout << "Bad input. Please enter а number: "; // Неправильний ввід 
+            std::cin.clear(); 
+            while (std::cin.get() != '\n') 
+                continue; 
+        } 
+        std::cout << "Value = " << х << std::endl ; 
+        return 0;
+    }
+
+4) Перепишіть наступний код так щоб використовувалось об'явлення using замість директиви using 
+    #include <iostream>
+    using namespace std; 
+    int main () 
+    { 
+        double х; 
+        cout << "Enter value: "; 
+        while (!(cin >> х)) 
+        { 
+            cout << "Bad input. Please enter а number: "; // Неправильний ввід 
+            cin.clear(); 
+            while (cin.get() != '\n') 
+            continue;
+        } 
+        cout << "Value = " << х << endl; 
+        return 0; 
+    }
+
+    #include <iostream>
+    using std::cout;
+    using std::cin;
+    using std::endl;
+    int main () 
+    { 
+        double х; 
+        cout << "Enter value: "; 
+        while (!(cin >> х)) 
+        { 
+            cout << "Bad input. Please enter а number: "; // Неправильний ввід 
+            cin.clear(); 
+            while (cin.get() != '\n') 
+            continue;
+        } 
+        cout << "Value = " << х << endl; 
+        return 0; 
+    }
+
+5) Припустимо в нас є функція average(3, 6) яка повертає середенє арифметичне. 
+    В першому файлі вона повинна повиртатит тип int а в другому тип double.
+    Як це можна реалізувати?
+
+    Це можна реалізувати двома методами
+        Або сторити дві статичні функції. По одній на файл.
+        Або ж використовувати простір імен. 
+
+6) Що виведе наступна програма? (Я дав відповідь в коментарях до main фукнції)
+
+    #include <iostream> 
+
+    using namespace std;
+
+    void other();
+    void another();
+
+    int x = 10;
+    int y; // ініціалізується як статична змінна, тобто y = 0
+
+    int main()
+    {
+        cout << x << endl; // 10
+        int х = 4; 
+        cout << х << endl; // 4
+        cout << y << endl; // 0
+
+        other();           // Other: 10, 1  
+        another();         // Another: 10, -4
+        
+        return 0;
+    }
+
+    void other()
+    {
+        int y = 1;
+        cout << "Other: " << x << ", " << y << endl;
+    }
+
+    #include <iostream>
+
+    using namespace std;
+    extern int x;
+
+    namespace
+    {
+        int y = -4;
+    }
+
+    void another()
+    {
+        cout << "another: " << x << ", " << y << endl;
+    }
+
+7) Що виведе наступна програма? (Я дав відповідь в коментарях до main фукнції)
+
+    #include <iostream> 
+
+    using namespace std;
+    void other();
+
+    namespace n1
+    {
+        int х = 1;
+    }
+
+    namespace n2
+    {
+        int х = 2;
+    }
+
+    int main()
+    {
+        using namespace n1;
+        cout << х << endl; // 1
+        {
+            int х = 4;
+            cout << х << ", " << n1::х << ", " << n2::х << endl; // 4, 1, 2
+        }
+        using n2::х;
+        cout << х << endl; // 2
+        other(); // 2\n 4, 1, 2\n 2 
+        return 0;
+    }
+
+    void other()
+    {
+        using namespace n2;
+        cout << х << endl; // 2
+        {
+            int х = 4;
+            cout << х << ", " << n1::х << ", " << n2::х << endl; // 4, 1, 2
+        
+        }	
+        using n2::х;
+        cout << х << endl; // 2
+    }

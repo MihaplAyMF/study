@@ -1,0 +1,112 @@
+
+1) Для кожного набору з ліва вкажіть яке наслідування загальнодоступне чи закрите використати для правої сторони
+
+    Медвіть -> Білий медвідь // загальнодоступне, білий медвід підвид медведів
+    Кухня -> Дім // закрита, кухня являється частиною дому, але не навпаки
+    Людина -> Програміст // загальнодоступне, програміст це людина
+    Людина -> Кінь та жокей // закрите, жокей це людина, але ж кінь ні
+    Людина, автомобіль -> Поїздка // Водій це людина тому загальнодоступне, а авомобіль закрите
+
+2) Нехай є наступні визначення
+    class Frabjous 
+    { 
+    private: 
+        char fab[20]; 
+    punlic: 
+        Frabjous(const char* s = "С++") : fab(s) { } 
+        virtual void tell() { cout << fab; } 
+    }; 
+    
+    class Gloam 
+    { 
+    private: 
+        int glip; 
+        Frabjous fb; 
+    public:
+        Gloam(int g = 0, const char* s = "С++");
+        Gloam(int g, const Frabjous& fr);
+        void tell();
+    ); 
+
+    Напишіть визначення для трьох класів Gloam, якщо функція tell() з класу 
+    Gloam виводить значення glip та fb
+
+    Gloam(int g = 0, const char* s = "С++") 
+        : flip(g), fb(s) {}
+    Gloam(int g, const Frabjous& fr) 
+        : flip(g, fb(fr)) {} 
+    void tell() 
+    {
+        fb.tell();
+        cout << "glib: " << glib << endl;
+    }
+
+3) Нехай є наступні визначення
+    class Frabjous 
+    { 
+    private: 
+        char fab[20]; 
+    punlic: 
+        Frabjous(const char* s = "С++") : fab(s) { } 
+        virtual void tell() { cout << fab; } 
+    }; 
+
+    class Gloam : public Frabjous
+    { 
+    private: 
+        int glip; 
+    public:
+        Gloam(int g = 0, const char* s = "С++");
+        Gloam(int g, const Frabjous& fr);
+        void tell();
+    ); 
+    
+    Напишіть визначення для трьох класів Gloam, якщо функція tell() з класу 
+    Gloam виводить значення glip та fb
+
+    Gloam(int g = 0, const char* s = "С++") 
+        : flip(g), Frabjous(s) {}
+    Gloam(int g, const Frabjous& fr)    
+        : flip(g, Frabjous(fr)) {} 
+    void tell()
+    {
+        Frabjous::tell();
+        cout << "glib: " << glib << endl;
+    }
+
+4) Нехай є наступне визначення, основані на шаблоні Stack з лістингу 14.13 і на класі Worker з лістинку 14.10
+    Stack<Worker*> sw;
+    Напишіть об'явлення класу, яке буде згенеровано (тільки об'явлення без методів)
+
+    class Stack<Worker*>
+    {
+    private: 
+        enum { МАХ = 10 ); 
+        Worker* items [MAX] ; 
+        int top; 
+    public: 
+        Stack(); 
+        bool isempty();  
+        bool isfull(); 
+        bool push(const Worker*& item); 
+        bool рор(Worker*& item);
+    }; 
+
+5) Використовуючи визначення шаблонів, щоб визначити
+    масив об'єктів string
+    ArrayTP<string> name; 
+    стек масивів значення double
+    StackTP<ArrayTP<double>>
+    масив стеків вказівників на об'єкти Worker
+    ArrayTP<StackTP<Worker*>>
+
+    Скільки визначень шаблонів класів в лістингу 14.18?
+    ArrayTP<int, 10> 
+    ArrayTP<double, 10> 
+    ArrayTP<int, 5> 
+    ArrayTP<ArrayTP<int, 5>, 10>
+
+6) Обв'ясніть різницю між віртуальними і не віртуальними базовими класами
+    якщо в нас буде клас що множинно наслідується від двох класів які є наслідниками базового класу
+    то в створеному класі буде дві копії базового класу, щоб цього не було базовий клас можна зробити віртуальним
+    для цього при кожному наслідування потрібно використовувати ключове слово virtual
