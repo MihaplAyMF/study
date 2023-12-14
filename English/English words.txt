@@ -65,6 +65,21 @@ venues
 wasting
 plastered
 
+// Essential Grammear in Use
+warn
+thirsty
+deal
+taught
+intended
+therebefore
+consisting
+corresponding
+comprehesive
+available
+edition
+particular
+restricted
+
 // Almost almost priority
 necessities
 weird
