@@ -1,7 +1,7 @@
 // vect3.cpp -- using STL functions
 #include <iostream>
 #include <string>
-#include <vector>
+#include <list>
 #include <algorithm>
 
 struct Review {
@@ -13,11 +13,12 @@ bool operator<(const Review & r1, const Review & r2);
 bool worseThan(const Review & r1, const Review & r2);
 bool FillReview(Review & rr);
 void ShowReview(const Review & rr);
+
 int main()
 {
     using namespace std;
 
-    vector<Review> books;
+    list<Review> books;
     Review temp;
     while (FillReview(temp))
         books.push_back(temp);
@@ -32,18 +33,17 @@ int main()
         cout << "Sorted by title:\nRating\tBook\n";
         for_each(books.begin(), books.end(), ShowReview);
 
-        sort(books.begin(), books.end(), worseThan);
+        books.sort(worseThan);
         cout << "Sorted by rating:\nRating\tBook\n";
         for_each(books.begin(), books.end(), ShowReview);
 
-        random_shuffle(books.begin(), books.end());
+        random_shuffle(books.begin(), books.end()); 
         cout << "After shuffling:\nRating\tBook\n";
         for_each(books.begin(), books.end(), ShowReview);
     }
     else
         cout << "No entries. ";
     cout << "Bye.\n";
-    // cin.get();
     return 0;
 }
 
@@ -75,7 +75,6 @@ bool FillReview(Review & rr)
     std::cin >> rr.rating;
     if (!std::cin)
         return false;
-    // get rid of rest of input line
     while (std::cin.get() != '\n')
         continue;
     return true;
