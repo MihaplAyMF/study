@@ -15,11 +15,11 @@ When did i start?? Yesterday!
 How much is enough for me? I don't know
 
 My progress (number means days)
-1) manga    1 1 1 1 0 0
-2) song     1 1 0 0 0 0
-3) serials  0 1 1 1 0 0
-4) words    0 1 0 1 0 0
-5) grammaer 0 0 1 1 0 0
-6) game     0 0 0 0 1 0
-7) youtube  0 1 0 0 0 0
-8) books    0 0 0 0 0 0
+1) manga    5
+2) song     3
+3) serials  3
+4) words    2
+5) grammaer 2
+6) game     1
+7) youtube  1
+8) books    0 
