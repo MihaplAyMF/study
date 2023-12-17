@@ -12,7 +12,7 @@ int main()
 	srand(static_cast<unsigned int>(time(nullptr)));
 
 	int start_time, end_time;
-    vector<int> vi0;
+	vector<int> vi0;
 
 	for(size_t i = 0; i < 1000000; i++)
 	{
