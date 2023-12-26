@@ -109,6 +109,15 @@ thirsty
 seat
 skiing  
 
+// unit 5
+etx -> Et cetera (It came from Latin)
+spelling
+boil
+parties (party + s)
+
+// unit 6
+bath (bathroom)
+
 // priority
 necessities
 weird
