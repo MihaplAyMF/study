@@ -373,7 +373,7 @@ void FilePosition()
     // 1. long ftell   (FILE* stream)                          - повертає позицію файлового вказівника 
     // 2. int  fseek   (FILE* stream, long offset, int origin) - встановлює позицію файлового вказівника
     // 3. int  fgetpos (FILE* stream, fpos_t* pos)             - запису позицію файлового вказівника в pos.
-    // 4. int  fsetpos (FILE* stream, const fpos_t* pos)       - переписує позицію файлового вказівника з pos.
+    // 4. int  fsetpos (FILE* stream, const fpo s_t* pos)       - переписує позицію файлового вказівника з pos.
     // 5. void rewind  (FILE* stream)                          - вертає позицію файлового вказівника на початок файлу.
     //
     // Приклад: є файл з текстовими даними. Найти всі букви "а" і замінити їх на букви "А". 

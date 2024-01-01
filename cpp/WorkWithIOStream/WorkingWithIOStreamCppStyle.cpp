@@ -363,7 +363,7 @@ int main()
     //-------------------------------- Як записувати НЕ текст у файл? --------------------------------
 
     {
-        /*// Візьмемо декілька данихрізних типів:
+        // Візьмемо декілька данихрізних типів:
         int variable = 10;
         double array[3] = {1.123, 2.456, 3.789};
         
@@ -402,19 +402,19 @@ int main()
             return 1;
         }
 
-        fileStream.write(reinterpret_cast<const char*>(&variable), sizeof(variable));
+        fileStream.write(reinterpret_cast<const char*>(&variable), sizeof(int));
 
         fileStream.write(reinterpret_cast<const char*>(&array), sizeof(double) * 3);
 
         fileStream.write(reinterpret_cast<const char*>(&myPoint), sizeof(Point));
         
-        fileStream.write(reinterpret_cast<const char*>(myVector.data()), sizeof(int) * myVector.size());*/
+        fileStream.write(reinterpret_cast<const char*>(myVector.data()), sizeof(int) * myVector.size());
     }
 
     //---------------------------------- Як зчитати НЕ текст з файл? ---------------------------------
 
     {
-        /*// Візьмемо декілька данихрізних типів:
+        // Візьмемо декілька данихрізних типів:
         int variable;
         double array[3];
 
@@ -473,7 +473,7 @@ int main()
             cout << val << " ";
         }
         cout << endl;
-        */
+        
     }
 
     //----------------------------------- Як закрити файловий потік ----------------------------------

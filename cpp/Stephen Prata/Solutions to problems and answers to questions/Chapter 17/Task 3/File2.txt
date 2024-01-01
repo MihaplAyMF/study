@@ -1,0 +1,2 @@
+I want to copy this text
+in another file.

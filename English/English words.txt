@@ -78,6 +78,72 @@ errand
 ballsy (shape circle)
 tinkle boy
 
+// chapter 5
+conclusion (end resulc)
+insisted (stood by own opinion)
+wasted (spend day)
+worth (you should do that)
+ray (line)
+vacation (holiday)
+trip (travel by car)
+seaweed 
+dipped (dropper)
+
+// Parasite
+// introduction
+imprint
+division
+throughout
+honorifics
+overview
+politeness
+speech
+distort
+familiarity
+suggest
+significant
+
+// 1-5 chapter 
+worth
+shame
+dressed
+forecast
+wallet
+suffer
+coexist
+severely
+currently
+determined
+stomach
+pressure
+damn
+alien
+steal
+mad
+failed
+sight
+kind
+creatures
+dare
+injure
+desire
+witnessed
+roll
+awake
+interfere
+coward
+bookworm
+appeared
+fuse
+stretch
+rubber
+force
+incredible
+screwed
+effort
+scale
+carefully
+
 // Essential Grammear in Use (Grammear book)
 // introduction
 deal
@@ -117,6 +183,8 @@ parties (party + s)
 
 // unit 6
 bath (bathroom)
+
+// uni 9
 
 // priority
 necessities

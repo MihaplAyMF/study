@@ -1,0 +1,194 @@
+
+1. Перепишіть наступний код з використанням спискової ініціаліазції. Відмовтесь від масиву ar
+    
+    #include <iostream>
+    #include <string>
+    #include <vector>
+
+    using namespace std;
+
+    class z200
+    {
+    private:
+        int j;
+        char ch;
+        double z;
+    public:
+        z200(int jv, char chv, double zv) 
+            : j(jv), ch(chv), z(zv) 
+        { }
+    };
+
+    int main() 
+    {
+        double x = 8.8                      // x {8.8};
+        string s = "What a bracing effect"; // s {"Text"}
+        int k (99);                         // k{99}
+        z200 zip (200, 'z', 0.67);          // zip {200, 'z', 0.67}
+        vector<int> ai(5)                   // ai {3, 9, 4, 7, 1};
+        int ar[5] = {3, 9, 4, 7, 1}
+        for (auto pt = ai.begin(), int i = 0; pt != ai.end; ++pt, ++i) /
+            *pt = ai[i];
+
+        return 0;
+    }
+
+2. Які виклики функцій в наступній програмі являють поамилковими. 
+    На що посилаються аргументи типа посилання в допустимих викликах?
+
+    #include <iostream> 
+    using namespace std;
+    double up(double х) { return 2.0 * х; }
+    void rl(const double& rx) { cout << rx << endl; }
+    void r2(double& rx) { cout << rx << endl; }
+    void rЗ(double&& rx) { cout << rx << endl; }
+    int main()
+    {
+        double w = 10.0;
+        rl(w);     // можна
+        rl(w + 1); // можна бо створюється тимчасовий об'єкт типу cosnt
+        rl(up(w)); // можна бо створюється тимчасовий об'єкт типу cosnt
+        r2(w);     // можна бо w це змінна, не є rvalue значенням
+        r2(w + 1); // не можна бо передаємо rvalue значення
+        r2(up(w)); // не можна бо передаємо rvalue значення
+        rЗ(w);     // не можна бо передаємо не rvalue значення
+        rЗ(w + 1); // можна бо сума буде rvalue значенням
+        rЗ(up(w)); // Можна бо up повертає rvalue значення 
+        return 0;
+    }
+
+3. Що відобразить наступна програма?
+
+a.  #include <iostream> 
+
+    using namespace std;
+
+    double up(double х) { return 2.0 * х; }
+    void r1(const double& rx) { cout << "const double& rx" << endl; }
+    void r1(double& rx) { cout << "double& rx" << endl; }
+
+    int main()
+    {
+        double w = 10.0;
+        r1(w);     // double& rx
+        r1(w + 1); // const double& rx
+        r1(up(w)); // const double& rx
+        
+        return 0;
+    }
+
+б. #include <iostream> 
+
+    using namespace std;
+
+    double up(double х) { return 2.0 * х; }
+    void r1(double& rx) { cout << "double& rx" << endl; }
+    void r1(double&& rx) { cout << "double&& rx" << endl; }
+
+    int main()
+    {
+        double w = 10.0;
+        r1(w);     // double& rx
+        r1(w + 1); // double&& rx
+        r1(up(w)); // double&& rx
+        
+        return 0;
+    }
+
+в. #include <iostream> 
+
+    using namespace std;
+
+    double up(double х) { return 2.0 * х; }
+    void r1(const double& rx) { cout << "const double& rx" << endl; }
+    void r1(double&& rx) { cout << "double&& rx" << endl; }
+
+    int main()
+    {
+        double w = 10.0;
+        r1(w);     // const double& rx
+        r1(w + 1); // double&& rx
+        r1(up(w)); // double&& rx
+        
+        return 0;
+    }
+
+4 Назвіть спеціальні функції-члени і вкажіть, що саме робить їх спеціальними
+    Вони спеціалні бо компілятор сам їх створює у разі необхідності
+    1. конструктор за замовчуванням
+    2. конструктор копії
+    3. перевизначений оператор дорінює для копіювання
+    4. конструктор переміщення
+    5. перевизначений оператор дорівнює для переміщення
+    6. деструктор
+
+5. Припустимо у вас є клас Fizzle який має тільки дані-члени як показано нище
+
+    class Fizzle
+    {
+    private:
+        double bubbles[4000];
+    };  
+
+    Чому цей клас поганий для використання конструктор переміщення.
+        тому що ми не використовуємо динамічне видідення пам'яті
+    Яка зміна може зробити клас підходящим для використання констуктора переміщення? 
+        ми могли б динамічно виділяти пам'ять для зберігання даних.
+
+6.  Перепишіть наступну коротку програму так щоб використовувати лямда-вираз замість f1(). Не міняйте show2()
+
+    #include <iostream>
+
+    template<typename T>
+    void show2(double x, T& fp) { std::cout << x << " -> " << fp(x) << '\n'; }
+    //void show2(double x, T fp) { std::cout << x << " -> " << fp(x) << '\n'; } 
+    double fl(double x) { return 1.8 * x + 32; }
+
+    int main()
+    {
+        show2(18.0, fl);
+
+        // show2(18.0, [](double x) { return 1.8 * x + 32; });
+
+        return 0;
+    }
+
+7. Перепишіть наступну програму так щоб використовувати лямбда-вираз замість функції Adder(). Не міняйте sum()
+    #include <iostream> 
+    #include <array>
+
+    using namespace std;
+
+    const int Size = 5;
+    template<typename Т>
+
+    void sum(array<double, Size> а, Т& fp); // Change T& to T
+
+    class Adder // delete Adder class
+    {
+        double tot;
+    public:	
+        Adder(double q = 0) : tot(q) {}
+        void operator() (double w) { tot += w; }
+        double tot_v() const { return tot; }
+    };
+
+    int main()
+    {
+        double total = 0.0;
+        Adder ad(total); // delete
+        array<double, Size> temp_c = {32.1, 34.3, 37.8, 35.2, 34.7};
+        sum(temp_c, ad) // chagne ad to [&total](double w){ total ++ w});
+        total = ad.tot_v(); //delete
+        cout << "total: " << ad.tot_v() << '\n'; // chagen ad.tot_v() to total
+        return 0;
+    }
+
+    template<typename Т>
+    void sum(array<double, Size> а, Т& fp)  // Change T& to T
+    {
+        for(auto pt = a.begin(); pt != a.end(); ++pt)
+        {
+            fp(*pt);
+        }
+    }
