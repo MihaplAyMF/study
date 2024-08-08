@@ -1,0 +1,2 @@
+C:\Users\mihap\OneDrive\Робочий стіл\Програмування\ProjectC++\SFML\SFML\x64\Debug\SFML.vcxproj.Up2Date
+C:\Users\mihap\OneDrive\Робочий стіл\study\cpp\SFML\SFML game development\SFML\x64\Debug\SFML.vcxproj.Up2Date

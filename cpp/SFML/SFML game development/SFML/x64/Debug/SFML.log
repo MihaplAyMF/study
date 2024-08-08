@@ -1,0 +1,78 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (SFML.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Aircraft.cpp
+  Animation.cpp
+  BloomEffect.cpp
+  Button.cpp
+C:\Users\mihap\OneDrive\Робочий стіл\study\cpp\SFML\SFML game development\SFML\SoundPlayer.h(1,13): warning C4081: expected 'newline'; found ';'
+  (compiling source file 'Button.cpp')
+  
+  Category.h
+  Command.cpp
+  CommandQueue.cpp
+  CommandQueue.h
+  Component.cpp
+  Container.cpp
+C:\Users\mihap\OneDrive\Робочий стіл\study\cpp\SFML\SFML game development\SFML\Container.cpp(75,30): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mihap\OneDrive\Робочий стіл\study\cpp\SFML\SFML game development\SFML\Container.cpp(100,50): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  DataTables.cpp
+  EmmiterNode.cpp
+  Entity.cpp
+  Game.cpp
+C:\Users\mihap\OneDrive\Робочий стіл\study\cpp\SFML\SFML game development\SFML\SoundPlayer.h(1,13): warning C4081: expected 'newline'; found ';'
+  (compiling source file 'Game.cpp')
+  
+  GameOverState.cpp
+C:\Users\mihap\OneDrive\Робочий стіл\study\cpp\SFML\SFML game development\SFML\GameOverState.cpp(22,53): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  GameServer.cpp
+  GameState.cpp
+C:\Users\mihap\OneDrive\Робочий стіл\study\cpp\SFML\SFML game development\SFML\SoundPlayer.h(1,13): warning C4081: expected 'newline'; found ';'
+  (compiling source file 'GameState.cpp')
+  
+  KeyBinding.cpp
+  Label.cpp
+  Main.cpp
+C:\Users\mihap\OneDrive\Робочий стіл\study\cpp\SFML\SFML game development\SFML\SoundPlayer.h(1,13): warning C4081: expected 'newline'; found ';'
+  (compiling source file 'Main.cpp')
+  
+  Generating Code...
+  Compiling...
+  MenuState.cpp
+  MultiplayerGameState.cpp
+C:\Users\mihap\OneDrive\Робочий стіл\study\cpp\SFML\SFML game development\SFML\SoundPlayer.h(1,13): warning C4081: expected 'newline'; found ';'
+  (compiling source file 'MultiplayerGameState.cpp')
+  
+  MusicPlayer.cpp
+  NetworkNode.cpp
+  ParticleNode.cpp
+  PauseState.cpp
+  Pickup.cpp
+  Player.cpp
+  PostEffect.cpp
+  Projectile.cpp
+  SceneNode.cpp
+  SettingsState.cpp
+  SoundNode.cpp
+C:\Users\mihap\OneDrive\Робочий стіл\study\cpp\SFML\SFML game development\SFML\SoundPlayer.h(1,13): warning C4081: expected 'newline'; found ';'
+  (compiling source file 'SoundNode.cpp')
+  
+  SoundPlayer.cpp
+C:\Users\mihap\OneDrive\Робочий стіл\study\cpp\SFML\SFML game development\SFML\SoundPlayer.h(1,13): warning C4081: expected 'newline'; found ';'
+  (compiling source file 'SoundPlayer.cpp')
+  
+  SpriteNode.cpp
+  State.cpp
+  StateStack.cpp
+  StateStack.h
+  TextNode.cpp
+  TitleState.cpp
+  Generating Code...
+  Compiling...
+  Utility.cpp
+  World.cpp
+C:\Users\mihap\OneDrive\Робочий стіл\study\cpp\SFML\SFML game development\SFML\SoundPlayer.h(1,13): warning C4081: expected 'newline'; found ';'
+  (compiling source file 'World.cpp')
+  
+  Generating Code...
+x64\Debug\CommandQueue.obj : warning LNK4042: object specified more than once; extras ignored
+x64\Debug\StateStack.obj : warning LNK4042: object specified more than once; extras ignored
+  SFML.vcxproj -> C:\Users\mihap\OneDrive\Робочий стіл\study\cpp\SFML\SFML game development\x64\Debug\!SFML.exe

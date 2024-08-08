@@ -1,0 +1,347 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "level": "warning",
+          "message": {
+            "text": "Variable 'sf::Glyph::lsbDelta' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files/vcpkg-master/installed/x64-windows/include/SFML/Graphics/Glyph.hpp"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sf::Glyph::{ctor}",
+                  "decoratedName": "??0Glyph@sf@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "sf::Glyph::lsbDelta"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "level": "warning",
+          "message": {
+            "text": "Variable 'sf::Glyph::rsbDelta' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files/vcpkg-master/installed/x64-windows/include/SFML/Graphics/Glyph.hpp"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sf::Glyph::{ctor}",
+                  "decoratedName": "??0Glyph@sf@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "sf::Glyph::rsbDelta"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.37.32822.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Program Files/vcpkg-master/installed/x64-windows/include/SFML/Graphics/Glyph.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "ec279059872450fa3899e77fc577c5fae255c384af012b3db5b7b33b36ec5890"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/mihap/onedrive/робочий стіл/програмування/projectc++/sfml/sfml/utility.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "3ba4eae4445280b455d93d12f5293a889539159ecdb50dcb1038703a2a2963f8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/mihap/onedrive/робочий стіл/програмування/projectc++/sfml/sfml/utility.hpp"
+          },
+          "hashes": {
+            "sha-256": "9001f25fc67ce14ef3df18587142bc1c69e8fc8cb06e2ad214ce3801740c87ba"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/mihap/onedrive/робочий стіл/програмування/projectc++/sfml/sfml/utility.inl"
+          },
+          "hashes": {
+            "sha-256": "069c9eeef4d1015785ffc6cbc5b3e0a67de6fd43c5887078a09fc52b97a0313b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/sprite.hpp"
+          },
+          "hashes": {
+            "sha-256": "441256c062dffe707f05cfb32fb098d9f00955816c10e5fd7b75e044bd967bec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/export.hpp"
+          },
+          "hashes": {
+            "sha-256": "e83796cd71dda9f8a86ab538350dc5cb92550537b180a4d6a972cbf96d75033e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/config.hpp"
+          },
+          "hashes": {
+            "sha-256": "e412351b94026c43b3a3953661ee3533099c9faf8c6b1cfc090da96a286459eb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/drawable.hpp"
+          },
+          "hashes": {
+            "sha-256": "bff6082e49cc7018f3818193166d8c488e5dcd61cce1ac78432375b6edc3af91"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/renderstates.hpp"
+          },
+          "hashes": {
+            "sha-256": "3d46c253c04e0726dd8782011f89486c8637b30f6dc564d3064408e2168055e5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/blendmode.hpp"
+          },
+          "hashes": {
+            "sha-256": "75f234bafdfec276b47f7da78261d65589d02a31f6ce0ddf6b844d6dc42f2cf2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/transform.hpp"
+          },
+          "hashes": {
+            "sha-256": "49def6ed9e5f6b831d6aab3a9c3d1fd5e6a5408166177855af0fac9dcc3c4507"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/rect.hpp"
+          },
+          "hashes": {
+            "sha-256": "14da874c46ae2ffb97b367eee5b044ffd28f5f220304855a7bf50d70837c81d4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/system/vector2.hpp"
+          },
+          "hashes": {
+            "sha-256": "3271f8eaac3f1d262878fbb14cdd4dbeb1cd329b80577515513f4f7c45c05fb2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/system/vector2.inl"
+          },
+          "hashes": {
+            "sha-256": "70d8e5ca6dc3aa99b92533bc231e3d556c953b4fba2c0ae064b5b8454ff838d9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/rect.inl"
+          },
+          "hashes": {
+            "sha-256": "44e4087b4adb38db3b9cce03138c3614f38cf38ae9e1fe9a7dfb89d277f948cb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/transformable.hpp"
+          },
+          "hashes": {
+            "sha-256": "9579b222e2f54c567d6718c10ddcda61c0bce4fbfcb1ae80df91cc026ee7d787"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/vertex.hpp"
+          },
+          "hashes": {
+            "sha-256": "9311ff50c28dadcd88567ee73233fee8d6f903c007ae692f79d18c2031ccee77"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/color.hpp"
+          },
+          "hashes": {
+            "sha-256": "67dd0d6c7948848cf371b542bff7d32f882dbfa055ffd14635441c2d1587bc3f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/text.hpp"
+          },
+          "hashes": {
+            "sha-256": "17ccdade1df21f0f54bad004e3fe0e3e17ad0cc1b1c4e8d9f66f75c3a33cd27c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/font.hpp"
+          },
+          "hashes": {
+            "sha-256": "7382f00c68c8b73ee305bf8e6a3e83445df68cb481b91918fe91a570b38c48cf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/texture.hpp"
+          },
+          "hashes": {
+            "sha-256": "6e3c70021acf741dffdf168a3396a98e2a24faa602e6eeadfc97813857ecbccf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/image.hpp"
+          },
+          "hashes": {
+            "sha-256": "e10d8694fc7a2061f1749400bf6f4d753fdfbb2863d4c2ec760eeb232a4430f7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/window/glresource.hpp"
+          },
+          "hashes": {
+            "sha-256": "435ab868713d09b67db6da23064c29ae5727181161ad27402b93ac5408d82f39"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/window/export.hpp"
+          },
+          "hashes": {
+            "sha-256": "997ad366b5a6cc230839a9cfc3aa6a3c6dccb9df4e38a7eccc26a0924f1f92b8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/system/noncopyable.hpp"
+          },
+          "hashes": {
+            "sha-256": "d08bbf1f7018134c2784bc95e133f68d0646d3bce194046bb0db9e02c97b357c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/system/export.hpp"
+          },
+          "hashes": {
+            "sha-256": "ae00bbdb837d29dca4d82d897fd57300e7542b19ac7d94b33e842aad64c5e07a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/vertexarray.hpp"
+          },
+          "hashes": {
+            "sha-256": "0883fad5da96200ac9ef27c0e7dc6612947aebd69ddea95b0404596add9a399b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/graphics/primitivetype.hpp"
+          },
+          "hashes": {
+            "sha-256": "9f036a2cfa194645cb51e7752ed324d749fa3c5254b096c1a51981b0d142fe05"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/system/string.hpp"
+          },
+          "hashes": {
+            "sha-256": "5ef3415df60dafd46ddfa5ba57a0b6d7331a643986b6875761d9846437dca2c9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/system/utf.hpp"
+          },
+          "hashes": {
+            "sha-256": "63c11bca4545fd490b2788421623ac87c1cda76d2f40726e495efce89db4332d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/system/utf.inl"
+          },
+          "hashes": {
+            "sha-256": "577ed3b6eea533f1d2fd767cf8b52ca49f9fd04b2f4e2c10123789011f4dd7e5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/vcpkg-master/installed/x64-windows/include/sfml/system/string.inl"
+          },
+          "hashes": {
+            "sha-256": "7c1349a61ced7e8bf3d1ed5cd8583709e93d6277608f5f8f3a602a291d02d836"
+          }
+        }
+      ]
+    }
+  ]
+}

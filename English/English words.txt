@@ -79,7 +79,7 @@ ballsy (shape circle)
 tinkle boy
 
 // chapter 5
-conclusion (end resulc)
+conclusion (end result)
 insisted (stood by own opinion)
 wasted (spend day)
 worth (you should do that)
@@ -89,60 +89,63 @@ trip (travel by car)
 seaweed 
 dipped (dropper)
 
-// Parasite
-// introduction
-imprint
-division
-throughout
-honorifics
-overview
-politeness
-speech
-distort
-familiarity
-suggest
-significant
+// chapter 6
+utterly (all)
+melts (cheese in the microwave)
+assume (hipothesis)
+mustered
+courage (strong man)
+pored 
+anxious (excited, impressed)
+drool
+granted (you really doon't know??)
+irritating (evil, angry)
+satellite 
 
-// 1-5 chapter 
-worth
-shame
-dressed
-forecast
-wallet
-suffer
-coexist
-severely
-currently
-determined
-stomach
-pressure
-damn
-alien
-steal
-mad
-failed
-sight
-kind
-creatures
-dare
-injure
-desire
-witnessed
-roll
-awake
-interfere
-coward
-bookworm
-appeared
-fuse
-stretch
-rubber
-force
-incredible
-screwed
-effort
-scale
-carefully
+
+// SFML Essential
+strengthening
+handle 
+instanse
+thus
+either (or)
+assume
+implement
+behavior
+scope
+performance
+beyond
+scope
+execution
+attenuation
+remain
+apart
+issue
+angle
+futher
+rather
+asset
+straight
+appears
+belong
+appear
+duration
+nood 
+dispatched
+querying
+respond
+polled
+satisfactory
+readability (read + ability)
+conversion
+proceed
+framerate
+foreground (frond plan)
+whereas (than as)
+straightforward
+preceding
+depth
+
 
 // Essential Grammear in Use (Grammear book)
 // introduction
@@ -167,24 +170,80 @@ remedial
 desirable
 directed
 
-// unit 1
+// Unit 1
 warn
 thirsty
 
-// unit 2
+// Unit 2
 seat
 skiing  
 
-// unit 5
-etx -> Et cetera (It came from Latin)
+// Unit 5
+etc -> Et cetera (It came from Latin)
 spelling
 boil
 parties (party + s)
 
-// unit 6
+// Unit 6
 bath (bathroom)
 
-// uni 9
+// uni 11
+accident
+depart
+
+// Unit 16
+just = a short time ago
+already = before you expected
+yet = until now
+wear wore worn 
+bill
+
+// Unit 19
+independent 
+grade (class)
+
+// Unit 21
+invented
+injured
+past participle
+paintings
+painted
+allow
+born
+wedding
+
+// Unit 22
+ironed
+ahead
+
+// Unit 23
+foreign
+
+// Unit 25
+arranged (arrangement)
+appointment
+
+// Unit 26
+intention 
+
+// Unit 27
+from until 
+probably
+lend
+
+// unit 32
+plently 
+seat belt
+
+// unit 33
+obliged (must do)
+net
+
+// unit 38
+carpet
+envelope
+wallet
+robbery
 
 // priority
 necessities
@@ -205,4 +264,9 @@ puked (Yes i want lern this word thought joke)
 rest (i already know this word but)
 thought
 through
+though
 taught
+due
+
+// phrases
+Don't judge a book by its cover
