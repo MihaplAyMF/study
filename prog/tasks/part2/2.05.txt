@@ -1,0 +1,55 @@
+Що буде надруковано в результаті виконання наступних фрагментів програми?
+
+a)	i := 0;
+	while i < 10 do
+	begin
+		writeln('Hello');
+		i := i + 1
+	end
+	
+Цей фрагмент коду надрукує Hello 10 разів, кожен в новому рядку 
+
+b)	i := 1;
+	while i < 20 do
+	begin
+		writeln('Good Bye');
+		i := i + 1
+	end
+
+Цей фрагмент коду надрукує Good Bye 19 разів, кожен в новому рядку 
+
+c)	i := 15;
+	while i < 27 do
+	begin
+		writeln('abrakadabra');
+		i := i + 1
+	end
+
+Цей фрагмент коду надрукує abrakadabra 12 разів, кожен в новому рядку 
+
+d)	i := 40;
+	while i > 25 do
+	begin
+		writeln('foobar');
+		i := i - 1
+	end
+
+Цей фрагмент коду надрукує foobar 15 разів, кожен в новому рядку 
+
+e)	i := 5;
+	while i < 104 do
+	begin
+		writeln('Johnny be good');
+		i := i + 10
+	end
+
+Цей фрагмент коду надрукує Johnny be good 10 разів, кожен в новому рядку 
+
+f)	i := 12;
+	while i > 22 do
+	begin
+		writeln('abcdefgh');
+		i := i + 1
+	end
+
+Цей код не зробить нічого

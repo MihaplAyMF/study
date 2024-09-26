@@ -1,0 +1,34 @@
+Що буде надруковано в результаті виконання наступних фрагментів програми?
+
+a)	i := 0;
+	repeat
+		writeln('Hello');
+		i := i + 1
+	until i > 10;
+
+Цей фрагмент коду надрукує hello 11 разів, кожен в новому рядку 
+
+b)	i := 1;
+	repeat
+		writeln('Good Bye');
+		i := i 
+	until i > 20;
+
+Цей фрагмент коду надрукує Good Bye 20 разів, кожен в новому рядку 
+
+c)	i := 12;
+	repeat
+		writeln('abrakadabra');
+		i := i - 1 
+	until i > 0;
+
+Цей фрагмент коду надрукує abrakadabra 13 разів, кожен в новому рядку 
+
+d)	i := 12;
+	repeat
+		writeln('abcdefg');
+		i := i + 1
+	until i = 0;
+
+Цей фрагмент коду надрукує abcdefg 1 раз
+

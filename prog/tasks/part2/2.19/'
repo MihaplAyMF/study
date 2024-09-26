@@ -1,0 +1,38 @@
+program prog;
+
+function CountWords(message: string): integer;
+var
+	i, res: integer;
+	isSpace: boolean;
+begin
+	res := 0;
+	isSpace := true;
+	for i:= 0 to length(message) do
+	begin
+		if message[i] = ' ' then
+			isSpace := true;
+	    if message[i] in ['A'..'Z', 'a'..'z', '0'..'9'] then
+		begin
+			if isSpace then
+			begin
+				res := res + 1;
+				isSpace := false
+			end;
+		end;
+	end;
+	CountWords := res;
+end;
+
+var
+	message: string;
+	num: integer;
+begin
+	write('Write message: ');
+	while not EOF do
+	begin
+		readln(message);
+		num := CountWords(message);
+		writeln(num);
+		write('Write message: ')
+	end;
+end.
