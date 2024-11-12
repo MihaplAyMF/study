@@ -1,3 +1,6 @@
+[![en](https://img.shields.io/badge/Language-English-red.svg)](https://github.com/MihaplAyMF/study/blob/main/prog/README.md)
+[![ua](https://img.shields.io/badge/Language-Ukrainian-green.svg)](https://github.com/MihaplAyMF/study/blob/main/prog/README.ua.md)
+
 # Приклади коду та рішення
  
 Андрій Столяров — автор тритомного курсу з програмування, який охоплює наступні теми: низькорівневе програмування, операційні системи та комп'ютерні мережі. Книги Столярова мають на меті дати глибоке розуміння основ програмування, а також принципів функціонування операційних систем і комп'ютерних мереж
