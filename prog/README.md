@@ -1,3 +1,5 @@
+[![en](https://img.shields.io/badge/Language-English-red.svg)](https://github.com/MihaplAyMF/study/edit/main/prog/README.md)
+[![ua](https://img.shields.io/badge/Language-Ukrainian-green.svg)](https://github.com/MihaplAyMF/study/edit/main/prog/README.ua.md)
 # Code Examples and Solutions
 
 Andriy Stolyarov is the author of a three-volume programming course that covers the following topics: low-level programming, operating systems, and computer networks. Stolyarov's books aim to provide a deep understanding of programming fundamentals, as well as the principles of how operating systems and computer networks function.<br>
