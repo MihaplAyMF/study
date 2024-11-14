@@ -1,0 +1,10 @@
+Вказівник str типа char* містить адресу строки "Hello".
+Що надрукує printg при наступни викликах до неї? 
+Пробіли позначте символом «␣».
+
+a) printf("%3s",   str) // Hello
+b) printf("%8s",   str) // ␣␣␣Hello
+c) printf("%-8s",  str) // Hello␣␣␣
+d) printf("%3.4s", str) // Hell
+e) printf("%6.4s", str) // ␣␣Hell
+
