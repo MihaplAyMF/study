@@ -1,0 +1,19 @@
+Напишіть функцію put_sum(), яка приймає через параметри три цілочисельні змінні,
+вираховує суму їх значень, та заносить суму у всі три змінні та повертає її 
+в якості повертаючого значення.
+
+int put_sum(int* num1, int* num2, int* num3) 
+{
+	int sum = *num1 + *num2 + *num3;
+	
+	*num1 = sum;
+	*num2 = sum;
+	*num3 = sum;
+   	
+	return sum;
+}
+
+int num1 = 1;
+int num2 = 2;
+int num3 = 3;
+int numSum = put_sum(&num1, &num2, &num3);

@@ -1,0 +1,19 @@
+Напишіть функцію, яка приймає на вхід адрес початку текстової строки і повертає
+в якості значення кількість пробілів цієї строки.
+
+int count_spaces(char* str)
+{
+	int count = 0;
+	
+	while (*str != '\0')
+	{
+		if(*str == ' ')
+			count++;
+		str++;
+	}
+
+	return count;
+};
+
+char* string = "Hello what's your name?";
+int space_count = count_spaces(string);
