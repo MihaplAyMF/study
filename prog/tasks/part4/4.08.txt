@@ -1,0 +1,12 @@
+Верніться до попереднього рішення і якщо воно не рекурсивне зробіть його
+рекурсивним, якщо ж рекурсивне то зробіть не рекурсивним. 
+
+int count_spaces(char* str)
+{
+	return *str ? (*str == ' ' ?  1 : 0) + count_spaces(++str) : 0;
+};
+
+char* string = "Hello what's your name?";
+int space_count = count_spaces(string);
+
+
