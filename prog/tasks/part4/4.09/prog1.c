@@ -65,7 +65,7 @@ void WordsValid(char* message, int* num1, int* num2)
     *num1 = 0;
     *num2 = 0;
     
-    int length = strlen(message)+1;
+    int length = strlen(message) + 1;
     for (int i = 0; i < length; i++)
     {
         if(message[i] == ' ' || message[i] == '\t' || message[i] == '\0')
