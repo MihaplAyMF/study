@@ -26,7 +26,7 @@ int str_to_int(char* str)
         if (*str < '0' || *str > '9')
         {
             printf("You entered the wrong number.\n");
-            return 1;
+            return 0;
         }
 
         num = num * 10 + (*str - '0');
