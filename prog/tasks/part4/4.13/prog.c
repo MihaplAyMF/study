@@ -6,11 +6,53 @@ int count_digit(int number)
     return number / 10 == 0 ? 1 : count_digit(number / 10) + 1;
 }
 
+int str_to_int(char* str)
+{
+    int num = 0;
+    int sign = 1;
+
+    if (*str == '-')
+    {
+        sign = -1;
+        str++;
+    } 
+    else if (*str == '+') 
+    {
+        str++;
+    }
+
+    while(*str != '\0')
+    {
+        if (*str < '0' || *str > '9')
+        {
+            printf("You entered the wrong number.\n");
+            return 1;
+        }
+
+        num = num * 10 + (*str - '0');
+        str++;
+    }
+
+    return num * sign;
+}
+
 int main (int argc, char* argv[])
 {
-    int start_pos = atoi(argv[1]);
-    int end_pos = atoi(argv[2]);
-    
+    if (argc != 3) 
+    {
+        printf("EROOR: Expected 2 arguments.\n");
+        return 1;
+    }
+
+    int start_pos = str_to_int(argv[1]);
+    int end_pos = str_to_int(argv[2]);
+  
+    if (start_pos <= 0 || end_pos <= 0)
+    {
+        printf("EROOR: Not correct arguments.\n");
+        return 1;
+    }
+
     int current_pos = 0;
     long num = 1;
 
