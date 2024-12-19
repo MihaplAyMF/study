@@ -1,0 +1,39 @@
+ Topics in this lecture:
+
+GNU/Linux overview,
+
+What is an Operating System boot,
+
+CPU and ROM code, how it starts
+
+1st stage - BIOS, CSM, MBR, (U)EFI,
+
+2nd stage - BIOS, Grub, U-Boot, ntloader.exe
+
+3rd stage - Linux Kernel, initrd, drivers,
+
+System boot stage:
+
+    GUI, userspace processes
+
+    Processes vs daemons
+
+    Background processes
+
+Linux distributives and their core parts
+
+    Init
+
+    Basic libraries set (GNU vs non-GNU)
+
+
+
+Description of the homework:
+
+Remove the bootloader from the command line
+
+Recover using install cd image
+
+Expected result:
+
+The VBox machine is fully functional

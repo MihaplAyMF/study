@@ -1,0 +1,8 @@
+ 
+dd if="шлях" of="шлях" опції
+if = input file
+of = output file
+
+sudo dd if=/dev/sda of=backup-mbr.img bs=446 count=1
+sudo dd if=/dev/zero of=/dev/sda bs=446 count=1
+sudo dd if=backup-mbr.img of=/dev/sda bs=446 count=1

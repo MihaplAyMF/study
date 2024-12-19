@@ -1,0 +1,45 @@
+Topics in this lecture: GNU/Linux overview,
+
+Kernel, drivers, GUI, userspace processes
+
+Linux distributives
+
+Users, groups, passwords
+
+File attributes
+
+Processes vs daemons
+
+Background processes
+
+Signals and killing
+
+Ubuntu installation to virtual machine
+
+Description of the homework: Ubuntu Linux installation to the Virtual Box VM, configure host-only network and organize network connection between the main PC and VM.
+
+Add new group “testgroup1” with GID 1234
+
+Add new group “testgroup2” with GID 4321
+
+Add new user “testuser” with UID 1234, Shell: /bin/bash, primary group = “testgroup1”, create homedir automatically.
+
+Add new user “testuser2” with UID 4321, Shell: /bin/bash, primary group = “testgroup2”, create homedir automatically.
+
+Rename “testuser” to “testuser1”
+
+Modify “testuser1” directory to be the same as username.
+
+Expected result:   Ubuntu Linux is installed on the Virtual Box VM, the host-only network is configured, and a network connection is established between the host PC and VM.
+
+testgroup1 is created with GID 1234
+
+testgroup2 is created with GID 4321
+
+testuser is created with UID 1234, Shell: /bin/bash, primary group = “testgroup1” and home directory: /home/testuser.
+
+testuser2 is created with UID 4321, Shell: /bin/bash, primary group = “testgroup2” and home directory: /home/testuser2.
+
+“testuser” is renamed to “testuser1”
+
+“testuser1” home directory is renamed to “/home/testuser1”

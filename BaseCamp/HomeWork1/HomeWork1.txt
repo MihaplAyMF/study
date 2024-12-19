@@ -1,0 +1,6 @@
+sudo groupadd testgroup1 -g 1234
+sudo groupadd testgroup2 -g 4321
+sudo useradd testuser -u 1234 -s /bin/bash -g testgroup1 -m
+sudo useradd testuser2 -u 4321 -s /bin/bash -g testgroup2 -m
+sudo usermod -l testuser1 testuser
+sudo usermod -d /home/testuser1 -m testuser1 (Я так розумію користувач запам'ятовує свою директорію?)
