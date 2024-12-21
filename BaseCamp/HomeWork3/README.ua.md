@@ -21,6 +21,8 @@ shell скрипти ігнорують SUID та SGID біти
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork3/Photo4.jpg)
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork3/Photo5.jpg)
 
+Оболонки успішно змінилися 
+
 ## 4. Основні команди Linux
 
 ### Основні команди для роботи з файлами та директоріями
@@ -129,3 +131,51 @@ shell скрипти ігнорують SUID та SGID біти
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork3/Photo6.jpg)
 
 Для пошуку було використано команду find 
+
+## Приблизний приклад використаних команд
+
+1. Завдання 
+sudo mkdir /home/test_tmp
+sudo chmod 777 /home/test_tmp
+su testuser1
+vim file1.txt
+vim user1.txt
+su testuser2
+vim file2.txt
+vim user2.txt
+exit 
+exit 
+sudo chmod +t /home/test_tmp
+su testuser2
+rm file1.txt // testuser2 is not in the sudoers file.
+exit
+sudo chmod -t /home/test_tmp
+su testuser2
+
+2. Завдання 
+su testuser2
+vim suid_test.sh
+chmod u+s suid_test.sh
+./suid_test.sh // testuser2
+exit
+su testuser1
+./suid_test.sh // testuser1
+exit
+./suid_test.sh // redex
+
+3. Завдання
+sudo apt install zsh
+cat /etc/shell
+sudo chsh -s /usr/bin/zsh testuser1
+su testuser1
+ps -u testuser1
+ps -u testuser2
+
+sudo apt install tcsh
+cat /etc/shell
+sudo chsh -s /usr/bin/tcsh testuser2
+su testuser2
+ps -u root
+
+5. Завдання
+sudo find / type -f -perm /4000 2>/dev/null
