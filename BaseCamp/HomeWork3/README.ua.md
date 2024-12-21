@@ -134,7 +134,7 @@ shell скрипти ігнорують SUID та SGID біти
 
 ## Приблизний приклад використаних команд
 
-1. Завдання 
+Завдання 1
 sudo mkdir /home/test_tmp
 sudo chmod 777 /home/test_tmp
 su testuser1
@@ -152,7 +152,7 @@ exit
 sudo chmod -t /home/test_tmp
 su testuser2
 
-2. Завдання 
+Завдання 2 
 su testuser2
 vim suid_test.sh
 chmod u+s suid_test.sh
@@ -163,7 +163,7 @@ su testuser1
 exit
 ./suid_test.sh // redex
 
-3. Завдання
+Завдання 3
 sudo apt install zsh
 cat /etc/shell
 sudo chsh -s /usr/bin/zsh testuser1
@@ -177,5 +177,5 @@ sudo chsh -s /usr/bin/tcsh testuser2
 su testuser2
 ps -u root
 
-5. Завдання
+Завдання 5
 sudo find / type -f -perm /4000 2>/dev/null
