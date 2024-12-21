@@ -22,6 +22,7 @@ Escaping
 
 Description of the homework:
 
+1.
     Block/Allow file deletion from directory by other users:
 
     Create test_tmp directory in /home folder from using the root user permissions
