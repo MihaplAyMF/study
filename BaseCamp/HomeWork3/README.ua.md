@@ -3,6 +3,8 @@
 
 ## 1. Блокування та дзвіл на видалення файлів 
 
+Спочатку було виконано завдання 3-5 тому на скриншотах до завдань 1-2 у користувачів різні оболонки
+
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork3/Photo1.jpg)
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork3/Photo2.jpg)
 
