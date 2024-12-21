@@ -1,0 +1,15 @@
+ 
+chsh -s /path/to/shell username
+su username
+exit
+ps -u username
+apt install
+
+sudo apt install zsh
+cat /etc/shell
+sudo chsh -s /usr/bin/zsh
+su testuser1
+ps -u testuser1
+sudo apt install tcsh
+
+
