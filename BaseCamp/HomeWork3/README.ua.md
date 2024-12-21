@@ -6,7 +6,7 @@
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork3/Photo1.jpg)
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork3/Photo2.jpg)
 
-Як видно зі скріншотів користувач не можемо видаляти файли що були створені іншими користувачами, при встановленому Sticky біті. 
+Як видно зі скріншотів користувач не може видаляти файли що були створені іншими користувачами, при встановленому Sticky біті. 
 
 ## 2. Перевірка роботи SUID для shell скриптів
 
