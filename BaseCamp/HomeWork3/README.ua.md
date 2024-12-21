@@ -151,6 +151,7 @@ rm file1.txt // testuser2 is not in the sudoers file.
 exit  
 sudo chmod -t /home/test_tmp  
 su testuser2  
+rm file1.txt 
 
 Завдання 2   
 su testuser2  
