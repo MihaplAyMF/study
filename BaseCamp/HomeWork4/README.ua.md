@@ -47,7 +47,7 @@ find ~/ -perm 777
 
 Я його почав використовую відвносно давно, тому вже знаю основний перелік команд, також змінив конфігураційний файл щоб було зручніше.
 
-![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork4/Photo1.jpg)
+![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork4/Photo5.jpg)
 
 ## 4. Розширення BASH
 
