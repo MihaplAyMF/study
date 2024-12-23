@@ -29,17 +29,17 @@ ls /etc/apt/sources.list.d/
 find / -type f -size +1G 2>/dev/null  
 find /tmp -empty 2>/dev/null  
 find ~/ -mmin -60  
-find ~/ -cmin -60  
-find ~/ -perm 777  
+find ~/ -cmin -60    
+find ~/ -perm 777    
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork4/Photo4.jpg)
 
--type  - вказати що шукаємо f (file) або d (directory)
--size  - шукає файли розмір яких більши/менишй/дорівнює n
--empty - шукає пусті файли або каталоги
--mmin  - шукає файли що були змінені за n хвилин
--cmin  - шукає файли метадані яких були змінені (включно з правами доступу)
--perm  - для пошуку файлів що мають відповідні права
+-type  - вказати що шукаємо f (file) або d (directory)  
+-size  - шукає файли розмір яких більши/менишй/дорівнює n  
+-empty - шукає пусті файли або каталоги  
+-mmin  - шукає файли що були змінені за n хвилин  
+-cmin  - шукає файли метадані яких були змінені (включно з правами доступу)  
+-perm  - для пошуку файлів що мають відповідні права  
 
 ## 3. Практика vimtutor
 
