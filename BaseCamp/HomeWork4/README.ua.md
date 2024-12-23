@@ -11,7 +11,7 @@ GPG ключі використовуються як гарантія що да�
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork4/Photo2.jpg)
 
-Щоб дізнатися PID телегрмау я використав команду
+Щоб дізнатися PID телеграму я використав команду
 ps aux | grep telegram
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork4/Photo3.jpg)
