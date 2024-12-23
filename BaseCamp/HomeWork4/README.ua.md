@@ -16,21 +16,21 @@ ps aux | grep telegram
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork4/Photo3.jpg)
 
-Після цього я ввів команди для того щоб видилаи телеграм з системиiта пакетів
-sudo apt-get remove telegram
-sudo add-apt-repository --remove ppa:atareao/telegram
-І перевірив чи є пакет в sources.list.d, його немає!!
-ls /etc/apt/sources.list.d/
-
+Після цього я ввів команди для того щоб видилаи телеграм з системиiта пакетів  
+sudo apt-get remove telegram  
+sudo add-apt-repository --remove ppa:atareao/telegram  
+І перевірив чи є пакет в sources.list.d, його немає!!  
+ls /etc/apt/sources.list.d/  
+ 
 ## 2. Команда find
 
-2>/dev/null - перенаправляє вивід про помилки в null
+2>/dev/null - перенаправляє вивід про помилки в null  
 
-find / -type f -size +1G 2>/dev/null
-find /tmp -empty 2>/dev/null
-find ~/ -mmin -60
-find ~/ -cmin -60
-find ~/ -perm 777
+find / -type f -size +1G 2>/dev/null  
+find /tmp -empty 2>/dev/null  
+find ~/ -mmin -60  
+find ~/ -cmin -60  
+find ~/ -perm 777  
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork4/Photo4.jpg)
 
