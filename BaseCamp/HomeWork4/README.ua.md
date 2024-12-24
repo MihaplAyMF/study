@@ -51,3 +51,17 @@ find ~/ -perm 777
 
 ## 4. Розширення BASH
 
+alias - команда що дозволяє створювати псевдоніми для власник команд
+.bashrc - конфігураційний файл для BASH оболонок терміналу.
+Я додав функцію arps яка викликає arp -a
+arps
+{
+    arp -a
+}
+
+![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork4/Photo6.jpg)
+![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork4/Photo7.jpg)
+
+
+
+
