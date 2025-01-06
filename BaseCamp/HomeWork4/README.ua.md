@@ -7,9 +7,16 @@
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork4/Photo1.jpg)
 
-GPG ключі використовуються як гарантія що дані надходять з надійного джерела. Вони зберігаються в /etc/apt/trusted.gpg.d/
+GPG ключі використовуються як гарантія що дані надходять з надійного джерела. Вони зберігаються в /etc/apt/trusted.gpg.d/, /usr/share/keyrings/ або безпосередньо в .sources файлі.
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork4/Photo2.jpg)
+
+Більш нові репозиторії використовують .sources файли які зберігаються в папці /etc/apt/sources.list.d/
+
+![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork4/Photo8.jpg)
+
+Команди gpg --list-key та apt-key list не працюють на .source файли, тому вони не покажуть нам gpg ключа для телеграму проте він є!!
+Перевірити коректність ключа можна командою sudo apt update
 
 Щоб дізнатися PID телеграму я використав команду
 ps aux | grep telegram
