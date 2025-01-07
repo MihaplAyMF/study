@@ -34,7 +34,7 @@ ps aux | grep telegram
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork4/Photo3.jpg)
 
-Після цього я ввів команди для того щоб видилаи телеграм з системиiта пакетів  
+Після цього я ввів команди для того щоб видалити телеграм з системи та пакетів  
 sudo apt-get remove telegram  
 sudo add-apt-repository --remove ppa:atareao/telegram  
 І перевірив чи є пакет в sources.list.d, його немає!!  
