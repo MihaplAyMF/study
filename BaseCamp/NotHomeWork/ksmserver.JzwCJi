@@ -1,4 +1,0 @@
-remove protoname=ICE protodata="" netid=local/debian:@/tmp/.ICE-unix/1586 authname=MIT-MAGIC-COOKIE-1
-remove protoname=XSMP protodata="" netid=local/debian:@/tmp/.ICE-unix/1586 authname=MIT-MAGIC-COOKIE-1
-remove protoname=ICE protodata="" netid=unix/debian:/tmp/.ICE-unix/1586 authname=MIT-MAGIC-COOKIE-1
-remove protoname=XSMP protodata="" netid=unix/debian:/tmp/.ICE-unix/1586 authname=MIT-MAGIC-COOKIE-1

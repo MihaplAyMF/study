@@ -1,0 +1,16 @@
+level 0: bandit0
+level 1: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+level 2: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+level 3: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+level 4: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+level 5: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+find -type f -size 1033c
+level 6: HWasnPhtq9AVKe0dmk45nxy20cvUa6EGi
+find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
+level 7: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+cat data.txt | grep millionth
+level 8: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc 
+sort data.txt | uniq -u
+level 9: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+strings data.txt | grep "="
+level 10: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
