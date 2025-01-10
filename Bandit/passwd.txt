@@ -14,3 +14,19 @@ sort data.txt | uniq -u
 level 9: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 strings data.txt | grep "="
 level 10: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+base64 -d data.txt
+level 11: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+tr "A-Za-z" "N-ZA-Mn-za-m" < data.txt
+level 12: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+mkdir /tmp/redex
+cd /tmp/redex
+cp ~/data.txt /tmp/redex
+useful commands: 
+1. mv file 
+2. xxd gzip bzip2 gzip tar
+level 13: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+ssh -i sshkey.private bandit14@localhost -p 2220
+level 14: MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+nc localhost 30000
+level 15: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+
