@@ -3,7 +3,7 @@
 
 ## 1. та 2.
 
-Цізавдання є у 3 звіті ![HomeWork3][https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork5/README.ua.md]
+Цізавдання є у 3 звіті ![HomeWork3](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork5/README.ua.md)
 
 ## 3. Додавання та створення дисків в лінукс
 
