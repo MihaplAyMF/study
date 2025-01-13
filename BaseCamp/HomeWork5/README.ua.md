@@ -1,11 +1,11 @@
 
 # Звіт по домашній роботі №5
 
-## 1 та 2
+## 1. та 2.
 
-Виконання 1 та 2 завданн є у 3 звіті
+Цізавдання є у 3 звіті [HomeWork3][https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork5/README.ua.md]
 
-## 3.  Додавання та створення дисків в лінукс
+## 3. Додавання та створення дисків в лінукс
 
 В віртуальній машниі я додав необхідні диски до системи
 
@@ -15,13 +15,13 @@
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork5/Photo2.jpg)
 
-На кожному диску я створив по 4 розділи, відповідно до вимох завдання
+На кожному диску я створив по 4 розділи
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork5/Photo3.jpg)
 
-Ті з дисків, що використовують MBR замість GPT, мають extended розділ який поділений на два logical диски
+Для дисків створених на MBR, додав extended розділ, який було поділено на два logical диски
 
-Після цього я створив 24 папки для кожного розділу відповідно
+Після цього було створего 24 папки, які відповідають кожного розділу 
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork5/Photo4.jpg)
 
@@ -33,15 +33,15 @@ mkfs.reiserfs /dev/sd*
 mkfs.btrfs /dev/sd*
 замість * назву відповідного розідлу
 
-я створив відповідні файлові системи, та монтував їх у створені папки
+створив відповідні файлові системи, та змонтував їх у створені папки. Для xfs потрібно не менше 300 мб тому довелося перевиділяти пам'ять, отримав її зменшивши розмір першої частини диску. І так для кожного.
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork5/Photo5.jpg)
 
-Та додав до файлу fstab щоб вони автоматично монтувалися після завантаження систми
+Після перезавантаження системи монтування зникло, тому щоб не монтувати кожного разу знову, до файлу fstab додав наступне
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork5/Photo6.jpg)
 
-Порівнюючи fdisk та parted зрозумів що fdisk більш зручний і простий у використанні.
+Порівнюючи fdisk та parted зрозумів що fdisk більш зручний і простий у використанні. 
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork5/Photo7.jpg)
 
