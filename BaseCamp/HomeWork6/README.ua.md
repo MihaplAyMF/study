@@ -17,13 +17,21 @@
 
 ## 4. Command sed
 
-Працювати з регулярними виразами трохи складно тому використовував ChatGPT/інтернет
+Працювати з регулярними виразами трохи складно тому використовував ChatGPT та інтернет.
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork6/Photo4.jpg)
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork6/Photo5.jpg)
 
+видалити коментарі
+sed '/^\s*#/d;/^\s*$/d' ~/.profile 
+
+видалити дублікати
+sed '$!N;/^\(.*\)\n\1$/!P;D' ~/.profile 
+
+дві зразу
+sed '/^\s*#/d;/^\s*$/d;$!N;/^\(.*\)\n\1$/!P;D' ~/.profile
+
 ## 5. Command awk
 
-![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork6/Photo5.jpg)
-
+![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork6/Photo6.jpg)
 
