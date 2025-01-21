@@ -17,10 +17,9 @@
 
 ## 4. Command sed
 
-Працювати з регулярними виразами трохи складно тому використовував ChatGPT та інтернет.
+Працювати з регулярними виразами складно!
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork6/Photo4.jpg)
-![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork6/Photo5.jpg)
 
 видалити коментарі
 sed '/^\s*#/d;/^\s*$/d' ~/.profile 
@@ -30,6 +29,8 @@ sed '$!N;/^\(.*\)\n\1$/!P;D' ~/.profile
 
 дві зразу
 sed '/^\s*#/d;/^\s*$/d;$!N;/^\(.*\)\n\1$/!P;D' ~/.profile
+
+![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork6/Photo5.jpg)
 
 ## 5. Command awk
 
