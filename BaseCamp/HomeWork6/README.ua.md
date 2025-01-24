@@ -3,6 +3,8 @@
 
 В цій роботі я не буду пояснювати роботу команд.
 
+Також зрозумів що командою VBoxManage startvm "Study" --type headless можна запустити віртуальну машину у прихованому режимі, а підключитися до неї через SSH і працювати зі свого терміналу. Це зручніше ніж працювати через саму віртуальну машину. 
+
 ## 1. Command cut
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork6/Photo1.jpg)
