@@ -13,7 +13,7 @@
 ## 3. Crontab and logrotate
 
 crontab -e  
-Я додав наступний  
+Я додав наступний рядок
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork7/Photo4.jpg)
 
