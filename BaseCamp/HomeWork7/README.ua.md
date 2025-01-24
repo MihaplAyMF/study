@@ -18,10 +18,10 @@ crontab -e
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork7/Photo4.jpg)
 
 mkdir log  
-Щоб не чикати 00:12 самостійно виконав цю команду  
+Щоб не чекати 00:12 самостійно виконав цю команду  
 du -ah /tmp | sort -rh » ~/log/tmp_fs.log  
 створив logrotate  
-ddsudo vim /etc/logrotate.d/tmp_fs_log   
+sudo dd vim /etc/logrotate.d/tmp_fs_log   
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork7/Photo5.jpg)
 
