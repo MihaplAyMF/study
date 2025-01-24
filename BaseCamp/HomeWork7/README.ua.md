@@ -41,14 +41,15 @@ dd if=/dev/zero of=/tmp/testfile bs=1K count=200
 Після стискаємо цей архів відповідними командами.  
 Ось так можна об'єднати пошук, архівування та сиснення.  
 
-tar -cvf - $(find ~/ -type f -name "*.txt") | bzip2 > txt_iles.tar.bz2  
-tar -cvf - $(find ~/ -type f -name "*.txt") | gzip > txt_files.tar.gz  
-tar -cvf - $(find ~/ -type f -name "*.txt") | zip > txt_files.tar.zip  
+```tar -cvf - $(find ~/ -type f -name "*.txt") | bzip2 > txt_iles.tar.bz2```  
+```tar -cvf - $(find ~/ -type f -name "*.txt") | gzip > txt_files.tar.gz```   
+```tar -cvf - $(find ~/ -type f -name "*.txt") | zip > txt_files.tar.zip```  
+ 
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork7/Photo9.jpg)
 
 Як бачимо архів bz2 займає наймешне місця, але він стискатиметься трохи довши ніж іншими двома.   
 Також є цікава гра bandit в якій у 12 завданні вимагало 10 разів розархівувати файл різними архіваторами, щоб дістати пароль до наступного рівня.   
 
-![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork6/Photo10.jpg)
+![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork7/Photo10.jpg)
 
