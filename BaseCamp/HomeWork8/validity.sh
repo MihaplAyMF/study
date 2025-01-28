@@ -8,25 +8,25 @@ then
 fi
 
 #Read input
-INPUT="$1"
+input="$1"
 
 # Check if it's an absolute path
-if [[ "$INPUT" =~ ^/ ]]; then
+if [[ "$input" =~ ^/ ]]; then
     # Check if file exists and is executable
-    if [ -x "$INPUT" ]; then
-        echo "$INPUT found and executable"
+    if [ -x "$input" ]; then
+        echo "$input found and executable"
         exit 0
     else
-        echo "$INPUT not found or not executable"
+        echo "$input not found or not executable"
         exit 1
     fi
 else
     # Check if command exists in PATH
-    if command -v "$INPUT" > /dev/null 2>&1; then
-        echo "$INPUT found in PATH"
+    if command -v "$input" > /dev/null 2>&1; then
+        echo "$input found in PATH"
         exit 0
     else
-        echo "$INPUT not found in PATH"
+        echo "$input not found in PATH"
         exit 1
     fi
 fi

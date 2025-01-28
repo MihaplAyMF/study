@@ -5,7 +5,7 @@
 
 ## 1. preview
 
-Скрипт preview.sh повинен приймати шлях до файлу і відповідно до типу файлу виводити відповідну інформацію.
+Скрипт preview.sh повинен приймати шлях до файлу і відповідно до типу виводити його вміст.
 
 ```bash
 #!/usr/bin/bash
@@ -18,31 +18,31 @@ then
 fi
 
 #Read file name
-FILE="$1"
+file="$1"
 
 #Check if the file exists
-if [ ! -e "$FILE" ]; then
-    echo "File '$FILE' does not exist"
+if [ ! -e "$file" ]; then
+    echo "File '$file' does not exist"
     exit 1
 fi
 
 PREVIEW_LENGTH="${PREVIEW_LENGTH:-10}"
-FILE_TYPE=$(file --mime-type -b "$FILE")
+FILE_TYPE=$(file --mime-type -b "$file")
 
 # Handle file types
 case "$FILE_TYPE" in
     application/x-tar | application/gzip) # tar files
-        tar -tf "$FILE" | head -n "$PREVIEW_LENGTH" ;;
+        tar -tf "$file" | head -n "$PREVIEW_LENGTH" ;;
     text/x=shellscript | text/x-c | text/plain) # txt files
         if command -v highlight > /dev/null; then
-            highlight -O ansi "$FILE" | head -n "$PREVIEW_LENGTH"
+            highlight -O ansi "$file" | head -n "$PREVIEW_LENGTH"
         else
-            cat "$FILE" | head -n "$PREVIEW_LENGTH"
+            cat "$file" | head -n "$PREVIEW_LENGTH"
         fi ;;
     application/x-executable | application/x-pie-executable) #  executable files 
-        hexdump -C "$FILE" | head -n "$PREVIEW_LENGTH" ;;
+        hexdump -C "$file" | head -n "$PREVIEW_LENGTH" ;;
     *) # another files
-        cat "$FILE" | head -n "$PREVIEW_LENGTH" ;;
+        cat "$file" | head -n "$PREVIEW_LENGTH" ;;
 esac
 ```
 
@@ -63,25 +63,25 @@ then
 fi
 
 #Read input
-INPUT="$1"
+input="$1"
 
 # Check if it's an absolute path
-if [[ "$INPUT" =~ ^/ ]]; then
+if [[ "$input" =~ ^/ ]]; then
     # Check if file exists and is executable
-    if [ -x "$INPUT" ]; then
-        echo "$INPUT found and executable"
+    if [ -x "$input" ]; then
+        echo "$input found and executable"
         exit 0
     else
-        echo "$INPUT not found or not executable"
+        echo "$input not found or not executable"
         exit 1
     fi
 else
     # Check if command exists in PATH
-    if command -v "$INPUT" > /dev/null 2>&1; then
-        echo "$INPUT found in PATH"
+    if command -v "$input" > /dev/null 2>&1; then
+        echo "$input found in PATH"
         exit 0
     else
-        echo "$INPUT not found in PATH"
+        echo "$input not found in PATH"
         exit 1
     fi
 fi
@@ -92,7 +92,7 @@ fi
 
 ## 3. str validation
 
-Скрипт str_validity.sh повинен просити ввести рядок і перевіряти цей рядок на вміст літер та цифр.
+Скрипт str_validation.sh повинен просити ввести рядок і перевіряти чи цей рядок містить лише літер та цифри.
 
 ```bash
 #!/bin/bash
