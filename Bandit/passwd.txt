@@ -1,3 +1,4 @@
+bandit.labs.overthewire.org
 level 0: bandit0
 level 1: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 level 2: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
@@ -29,4 +30,11 @@ ssh -i sshkey.private bandit14@localhost -p 2220
 level 14: MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
 nc localhost 30000
 level 15: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
-
+ncat --ssl 127.0.0.1 30001
+level 16: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+nmap -p 31000 32000 localhost
+level 17: RSA key
+diff passwords.new passwords.old
+level 18: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+ssh -t user@ip_adress -p 2220 /bin/sh
+level 19: cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
