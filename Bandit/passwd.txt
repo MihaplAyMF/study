@@ -1,4 +1,4 @@
-bandit.labs.overthewire.org
+bandit.labs.overthewire.org -p 2220
 level 0: bandit0
 level 1: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 level 2: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
@@ -38,3 +38,16 @@ diff passwords.new passwords.old
 level 18: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
 ssh -t user@ip_adress -p 2220 /bin/sh
 level 19: cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+./bandit20-do cat /etc/bandit_pass/bandit20
+level 20: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+echo "0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO" | nc -l -p 1234 &
+./suconnect 1234
+level 21: EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+look in /etc/cron.d/ 
+level 22: tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+look in /etc/cron.d/ 
+level 23: 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+create script with 777
+#!/bin/bash
+cat /etc/bandit_pass/bandit24 > /tmp/redex/pass
+level 24: gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8

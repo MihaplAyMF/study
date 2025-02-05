@@ -27,3 +27,10 @@
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork9/Photo3.jpg)
 
 Ці пакети не містять ніяких запитів в гугл!! І або я не зміг такі запити знайти.
+
+## Wireshark
+
+Графічний аналог tshark, за допомогою якого можна зручно аналізувати трафік
+
+![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork9/Photo4.jpg)
+
