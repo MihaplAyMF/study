@@ -22,15 +22,13 @@
 ```tshark -r first_100_packets.pcapng```    
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork9/Photo1.jpg)
-
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork9/Photo2.jpg)
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork9/Photo3.jpg)
-
-Ці пакети не містять ніяких запитів в гугл!! І або я не зміг такі запити знайти.
 
 ## Wireshark
 
 Графічний аналог tshark, за допомогою якого можна зручно аналізувати трафік
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork9/Photo4.jpg)
+
 
