@@ -18,7 +18,7 @@
 
 ## Hostname
 
-Командою ```sudo hostnamectl set-hostname hosta```, я змінив хостові імена. А також відредагував файл /etc/hosts
+Командою ```sudo hostnamectl set-hostname hosta```, я змінив хостові імена. Після цього відредагував файл /etc/hosts.
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork10/Photo2.jpg)
 
@@ -28,18 +28,21 @@
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork10/Photo3.jpg)
 
-Ось цими всетаки командами зміг налаштувати
-```sudo nmcli connection modify enp0s3 ipv4.method manual ipv4.addresses 10.10.10.2/24 ipv4.gateway 10.10.10.1 ipv4.dns "8.8.8.8, 8.8.4.4"```
-```sudo nmcli connection up enp0s3```
+Ось цими командами зміг налаштувати:  
+```sudo nmcli connection modify enp0s3 ipv4.method manual ipv4.addresses 10.10.10.2/24 ipv4.gateway 10.10.10.1 ipv4.dns "8.8.8.8, 8.8.4.4"```  
+```sudo nmcli connection up enp0s3```  
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork10/Photo4.jpg)
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork10/Photo5.jpg)
 
 ## ip route and ping
 
-ip roure - повертає нам поточну таблицю маршутизації, налаштував її так щоб комп'ютери спілкувалися відповідно до вимог завдання.
+ip roure - повертає нам поточну таблицю маршутизації, налаштував її так щоб комп'ютери спілкувалися відповідно до вимог завдання.   
+Перевіряв зв'язок між хостами командою ping
 
 ![image](https://github.com/MihaplAyMF/study/blob/main/BaseCamp/HomeWork10/Photo6.png)
+
+Як видно з фото, hosta не має можливості комунікувати з hostc, тоді як hostb може з обома. 
 
 
 
