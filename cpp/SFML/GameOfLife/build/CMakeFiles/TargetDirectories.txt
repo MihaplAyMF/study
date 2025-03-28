@@ -1,3 +1,0 @@
-/home/miha/Study/cpp/SFML/GameOfLife/build/CMakeFiles/GameOfLife.dir
-/home/miha/Study/cpp/SFML/GameOfLife/build/CMakeFiles/edit_cache.dir
-/home/miha/Study/cpp/SFML/GameOfLife/build/CMakeFiles/rebuild_cache.dir
