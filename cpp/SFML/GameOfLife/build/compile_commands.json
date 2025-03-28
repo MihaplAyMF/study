@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/miha/Study/cpp/SFML/GameOfLife/build",
+  "command": "/usr/bin/c++ -DIMGUI_USER_CONFIG=\\\"imconfig-SFML.h\\\" -DSFML_STATIC -I/home/miha/Study/cpp/SFML/GameOfLife/src -isystem /home/miha/Study/cpp/SFML/GameOfLife/vcpkg/installed/x64-linux/include -std=gnu++17 -o CMakeFiles/GameOfLife.dir/src/Game.cpp.o -c /home/miha/Study/cpp/SFML/GameOfLife/src/Game.cpp",
+  "file": "/home/miha/Study/cpp/SFML/GameOfLife/src/Game.cpp"
+},
+{
+  "directory": "/home/miha/Study/cpp/SFML/GameOfLife/build",
+  "command": "/usr/bin/c++ -DIMGUI_USER_CONFIG=\\\"imconfig-SFML.h\\\" -DSFML_STATIC -I/home/miha/Study/cpp/SFML/GameOfLife/src -isystem /home/miha/Study/cpp/SFML/GameOfLife/vcpkg/installed/x64-linux/include -std=gnu++17 -o CMakeFiles/GameOfLife.dir/src/Window.cpp.o -c /home/miha/Study/cpp/SFML/GameOfLife/src/Window.cpp",
+  "file": "/home/miha/Study/cpp/SFML/GameOfLife/src/Window.cpp"
+},
+{
+  "directory": "/home/miha/Study/cpp/SFML/GameOfLife/build",
+  "command": "/usr/bin/c++ -DIMGUI_USER_CONFIG=\\\"imconfig-SFML.h\\\" -DSFML_STATIC -I/home/miha/Study/cpp/SFML/GameOfLife/src -isystem /home/miha/Study/cpp/SFML/GameOfLife/vcpkg/installed/x64-linux/include -std=gnu++17 -o CMakeFiles/GameOfLife.dir/src/main.cpp.o -c /home/miha/Study/cpp/SFML/GameOfLife/src/main.cpp",
+  "file": "/home/miha/Study/cpp/SFML/GameOfLife/src/main.cpp"
+}
+]

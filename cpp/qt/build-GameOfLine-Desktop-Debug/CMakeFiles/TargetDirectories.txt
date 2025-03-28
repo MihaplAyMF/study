@@ -1,0 +1,8 @@
+/home/miha/Study/cpp/qt/build-GameOfLine-Desktop-Debug/CMakeFiles/GameOfLine.dir
+/home/miha/Study/cpp/qt/build-GameOfLine-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/miha/Study/cpp/qt/build-GameOfLine-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/miha/Study/cpp/qt/build-GameOfLine-Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/miha/Study/cpp/qt/build-GameOfLine-Desktop-Debug/CMakeFiles/install.dir
+/home/miha/Study/cpp/qt/build-GameOfLine-Desktop-Debug/CMakeFiles/install/local.dir
+/home/miha/Study/cpp/qt/build-GameOfLine-Desktop-Debug/CMakeFiles/install/strip.dir
+/home/miha/Study/cpp/qt/build-GameOfLine-Desktop-Debug/CMakeFiles/GameOfLine_autogen.dir
