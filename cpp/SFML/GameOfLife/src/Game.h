@@ -2,6 +2,8 @@
 
 #include <SFML/Graphics.hpp>
 
+#include "GameState.h"
+
 class Game
 {
 public:
@@ -15,6 +17,7 @@ private:
     
 private:
     static const sf::Time timePerFrame;
-
+    
     sf::RenderWindow mWindow;
+    GameState mState;
 };

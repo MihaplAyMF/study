@@ -1,15 +1,11 @@
 #include "Game.h"
 
-#include <cstdlib>
-#include <imgui-SFML.h>
-
 const sf::Time Game::timePerFrame = sf::seconds(1.f / 60.f);
 
 Game::Game()
+    : mWindow(sf::VideoMode({1024, 768}), "Game of Life", sf::Style::Default) 
+    , mState(mWindow)
 {
-    mWindow.create(sf::VideoMode({1024, 768}), "Game of Life", sf::Style::Default);
-    if(!ImGui::SFML::Init(mWindow))
-        abort();
 }
 
 void Game::run()
@@ -27,7 +23,6 @@ void Game::run()
 
             handleInput();
             update(timePerFrame);
-
         }
         render();
     }  
@@ -36,7 +31,8 @@ void Game::run()
 void Game::handleInput()
 {
 	while(const std::optional event = mWindow.pollEvent())
-	{
+	{            
+        mState.handle(*event);
         if (event->is<sf::Event::Closed>())
         {
             mWindow.close();
@@ -47,11 +43,13 @@ void Game::handleInput()
 
 void Game::update(sf::Time dt)
 {
+    mState.update();
     
 }
 
 void Game::render() 
 {
     mWindow.clear();
+    mState.render(); 
     mWindow.display();
 }
