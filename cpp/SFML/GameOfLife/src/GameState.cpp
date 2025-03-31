@@ -1,16 +1,25 @@
 #include "GameState.h"
 #include <cstdlib>
 #include <imgui-SFML.h>
+#include <iostream>
 
 GameState::GameState(sf::RenderWindow& window)
     : mWindow(window)
-    , mCellSize(5.f)
+    , mCellSizeOptions{16, 32, 64}
+    , mSelectedCellSizeIndex(0)
+    , mCellSize(16)
+    , mGridWidth(768) 
+    , mGridHeight(768)
+    , mIsRunning(false)
 {
-    cell.setSize(sf::Vector2f(10, 10));
-    cell.setFillColor(sf::Color::White);
-    cell.setPosition({300, 300}); 
     if(!ImGui::SFML::Init(mWindow))
         abort();
+    
+    cols = mGridWidth / mCellSize;
+    rows = mGridHeight / mCellSize;
+
+    grid.resize(cols, std::vector<bool>(rows, false));
+    nextGrid = grid;
 }
 
 GameState::~GameState() 
@@ -21,28 +30,123 @@ GameState::~GameState()
 void GameState::handle(const sf::Event& event)
 {
     ImGui::SFML::ProcessEvent(mWindow, event);
+
+    if (event.is<sf::Event::MouseButtonPressed>())
+    {
+        std::cout << "Click" << std::endl;
+        const auto& mouseEvent = event.getIf<sf::Event::MouseButtonPressed>();
+        int mouseX = mouseEvent->position.x - 256;
+        int mouseY = mouseEvent->position.y;
+
+        if (mouseX >= 0 && mouseX < mGridWidth && mouseY >= 0 && mouseY < mGridHeight)
+        {
+            std::cout << mCellSize << " ";
+            int col = mouseX / mCellSize;
+            int row = mouseY / mCellSize;
+            std::cout << col << ", " << row << std::endl;
+            grid[col][row] = !grid[col][row];
+            std::cout << "grid(" << col << ", "<< row << "): " << grid[col][row] << std::endl;
+        }
+    }
+
+   
+    if (event.is<sf::Event::KeyReleased>())
+    {
+        if (event.getIf<sf::Event::KeyReleased>()->scancode == sf::Keyboard::Scan::Escape)
+        {
+            mWindow.close();
+        }
+    }
 }
 
 void GameState::update()
-{    
+{   
+    if (!mIsRunning) return;
+    
+    for (int i = 0; i < cols; ++i)
+    {
+        for (int j = 0; j < rows; ++j)
+        {
+            int neighbors = countNeighbors(i, j);
+            if (grid[i][j])
+            {
+                nextGrid[i][j] = (neighbors == 2 || neighbors == 3);
+            }
+            else
+            {
+                nextGrid[i][j] = (neighbors == 3);
+            }
+        }
+    }
 
+    grid = nextGrid;
 }
 
 void GameState::render()
-{
-    
+{   
     ImGui::SFML::Update(mWindow, deltaClock.restart());
 
-    ImGui::SetNextWindowPos(ImVec2(10, 10), ImGuiCond_Always);  // Вказуємо координати
-    ImGui::SetNextWindowSize(ImVec2(300, 200), ImGuiCond_Always);  // Розмір вікна
-    
+    ImGui::SetNextWindowPos(ImVec2(0, 0), ImGuiCond_Always);
+    ImGui::SetNextWindowSize(ImVec2(256, 768), ImGuiCond_Always);
+
     ImGui::Begin("Settings", nullptr, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoResize);
 
-    ImGui::SliderFloat("Cell Size", &mCellSize, 5.0f, 200.0f);
+    const char* items[] = {"16", "32", "64"};
+    if (ImGui::Combo("Cell Size", &mSelectedCellSizeIndex, items, IM_ARRAYSIZE(items)))
+    {
+        mCellSize = mCellSizeOptions[mSelectedCellSizeIndex];
+        cols = mGridWidth / mCellSize;
+        rows = mGridHeight / mCellSize;
+        grid.resize(cols, std::vector<bool>(rows, false));
+        nextGrid = grid;
+    }
 
-    cell.setSize(sf::Vector2f(mCellSize, mCellSize));
+    if (ImGui::Button(mIsRunning ? "Pause" : "Start"))
+    {
+        mIsRunning = !mIsRunning;
+        std::cout << mIsRunning << std::endl;
+    }
 
     ImGui::End();
+
+    drawGrid();
+
     ImGui::SFML::Render(mWindow);
-    mWindow.draw(cell);
+}
+
+void GameState::drawGrid()
+{
+    sf::RectangleShape cellShape;
+    cellShape.setSize(sf::Vector2f(mCellSize - 1, mCellSize - 1));
+    cellShape.setOutlineThickness(1);
+    cellShape.setOutlineColor(sf::Color(200, 200, 200));
+
+    for (int i = 0; i < cols; ++i)
+    {
+        for (int j = 0; j < rows; ++j)
+        {
+            cellShape.setFillColor(grid[i][j] ? sf::Color::White : sf::Color::Black);
+            cellShape.setPosition({256 + i * mCellSize, j * mCellSize});
+            mWindow.draw(cellShape);
+        }
+    }
+}
+
+int GameState::countNeighbors(int x, int y)
+{
+    int count = 0;
+    for (int dx = -1; dx <= 1; ++dx)
+    {
+        for (int dy = -1; dy <= 1; ++dy)
+        {
+            if (dx == 0 && dy == 0) continue;
+            int nx = x + dx;
+            int ny = y + dy;
+            if (nx >= 0 && nx < cols && ny >= 0 && ny < rows)
+            {
+                count += grid[nx][ny];
+            }
+        }
+    }
+    return count;
 }

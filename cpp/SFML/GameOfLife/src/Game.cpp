@@ -1,9 +1,9 @@
 #include "Game.h"
 
-const sf::Time Game::timePerFrame = sf::seconds(1.f / 60.f);
+const sf::Time Game::timePerFrame = sf::seconds(1.f / 15.f);
 
 Game::Game()
-    : mWindow(sf::VideoMode({1024, 768}), "Game of Life", sf::Style::Default) 
+    : mWindow(sf::VideoMode({1024, 768}), "Game of Life", sf::Style::Titlebar | sf::Style::Close) 
     , mState(mWindow)
 {
 }
