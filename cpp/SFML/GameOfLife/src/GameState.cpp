@@ -1,7 +1,6 @@
 #include "GameState.h"
 #include <cstdlib>
 #include <imgui-SFML.h>
-#include <iostream>
 
 GameState::GameState(sf::RenderWindow& window)
     : mWindow(window)
@@ -33,19 +32,15 @@ void GameState::handle(const sf::Event& event)
 
     if (event.is<sf::Event::MouseButtonPressed>())
     {
-        std::cout << "Click" << std::endl;
         const auto& mouseEvent = event.getIf<sf::Event::MouseButtonPressed>();
         int mouseX = mouseEvent->position.x - 256;
         int mouseY = mouseEvent->position.y;
 
         if (mouseX >= 0 && mouseX < mGridWidth && mouseY >= 0 && mouseY < mGridHeight)
         {
-            std::cout << mCellSize << " ";
             int col = mouseX / mCellSize;
             int row = mouseY / mCellSize;
-            std::cout << col << ", " << row << std::endl;
             grid[col][row] = !grid[col][row];
-            std::cout << "grid(" << col << ", "<< row << "): " << grid[col][row] << std::endl;
         }
     }
 
@@ -97,14 +92,13 @@ void GameState::render()
         mCellSize = mCellSizeOptions[mSelectedCellSizeIndex];
         cols = mGridWidth / mCellSize;
         rows = mGridHeight / mCellSize;
-        grid.resize(cols, std::vector<bool>(rows, false));
-        nextGrid = grid;
+        grid.assign(cols, std::vector<bool>(rows, false));
+        nextGrid.assign(cols, std::vector<bool>(rows, false));
     }
 
     if (ImGui::Button(mIsRunning ? "Pause" : "Start"))
     {
         mIsRunning = !mIsRunning;
-        std::cout << mIsRunning << std::endl;
     }
 
     ImGui::End();
