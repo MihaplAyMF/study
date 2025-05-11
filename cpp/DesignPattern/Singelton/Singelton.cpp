@@ -1,31 +1,37 @@
 #include <iostream>
 
-class Singleton {
+class Singleton 
+{
 public:
     Singleton(const Singleton&) = delete;
     Singleton& operator=(const Singleton&) = delete;
 
 
-    static Singleton& getInstance() {
+    static Singleton& getInstance() 
+    {
         static Singleton instance;
         return instance;
     }
 
-    void showMessage() {
+    void showMessage() 
+    {
         std::cout << "Singleton instance at: " << this << std::endl;
     }
 
 private:
-    Singleton() {
+    Singleton() 
+    {
         std::cout << "Singleton created\n";
     }
 
-    ~Singleton() {
+    ~Singleton() 
+    {
         std::cout << "Singleton destroyed\n";
     }
 };
 
-int main() {
+int main()
+{
     Singleton& s1 = Singleton::getInstance();
     Singleton& s2 = Singleton::getInstance();
 
