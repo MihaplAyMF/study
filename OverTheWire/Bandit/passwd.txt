@@ -51,3 +51,10 @@ create script with 777
 #!/bin/bash
 cat /etc/bandit_pass/bandit24 > /tmp/redex/pass
 level 24: gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
+brute-forcing
+level 25: iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
+hard
+level 26: s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
+./bandit27-do cat /etc/bandit_pass/bandit27
+level 27: upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
+
