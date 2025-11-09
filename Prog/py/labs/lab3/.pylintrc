@@ -1,0 +1,41 @@
+[MASTER]
+# Ігноруємо середовище
+ignore=.venv
+init-hook='import sys; sys.path.append(".")'
+
+[MESSAGES CONTROL]
+# Вимикаємо надокучливі попередження (docstring тощо)
+disable=C0114,C0115,C0116,C0103,E1101
+
+[FORMAT]
+# PEP 8: довжина рядка — 79 символів, docstring — до 72
+max-line-length=79
+indent-string='    '   # 4 пробіли
+expected-line-ending-format=LF
+
+[DESIGN]
+# Кількість аргументів, допустимих для функції
+max-args=5
+
+[BASIC]
+# Іменування за PEP 8
+variable-naming-style=snake_case
+function-naming-style=snake_case
+method-naming-style=snake_case
+class-naming-style=PascalCase
+const-naming-style=UPPER_CASE
+argument-naming-style=snake_case
+attr-naming-style=snake_case
+# Дозволимо приватні змінні
+include-naming-hint=yes
+
+[TYPECHECK]
+# Дозволимо динамічні імпорти
+generated-members=hashlib.*,math.*,random.*
+
+[IMPORTS]
+# Правила для імпортів
+known-standard-library=math,random,hashlib,os,sys
+# Сортування: стандартні → сторонні → локальні
+import-graph=no
+
