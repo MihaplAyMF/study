@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме — Спеціаліст з інформаційної безпеки</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="header-content">
+            <div>
+                <h1>Федик Михайло, cтудент групи КБ-205</h1>
+                <p><strong>Спеціалізація:</strong> Інформаційна безпека та Системне адміністрування</p>
+            </div>
+            <div class="theme-controls">
+                <label for="theme-toggle">Нічний режим:</label>
+                <input type="checkbox" id="theme-toggle">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="info-section">
+            <h2>Про себе</h2>
+            <p>Студент Національного університету "Львівська політехніка" (НУЛП), навчаюся на спеціаліста з інформаційної безпеки. Захоплююся Linux (Arch Linux), мережевими технологіями та кібербезпекою.</p>        
+        </section>
+
+        <section>
+            <h2>Досвід та Проєкти</h2>
+            <ul>
+                <li><strong>Інтернатура в UnderDefense:</strong> Проходжу практичне навчання у сфері кібербезпеки, вивчаю файлові системи та методи захисту даних.</li>
+                <li><strong>Хмарні технології та Мережі:</strong> Реалізував підняття вебсайту на платформі AWS та налаштував власний VPN-сервер.</li>
+                <li><strong>Розробка ігор:</strong> Маю 2 роки досвіду вивчення C++. Розробив власний 2D-платформер, використовуючи бібліотеку SFML.</li>
+                <li><strong>CTF та Змагання:</strong> Активний учасник змагань у форматі Capture The Flag (CTF) та інженерних хакатонів.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Освіта та Сертифікація</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Організація</th>
+                        <th>Напрямок</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IT-Step School</td>
+                        <td>Сертифікати з вивчення HTML, CSS, JavaScript та PHP</td>
+                    </tr>
+                    <tr>
+                        <td>GlobalLogic</td>
+                        <td>Курс навчання за напрямками Linux та Network</td>
+                    </tr>
+                    <tr>
+                        <td>НУ "Львівська політехніка"</td>
+                        <td>Спеціальність "Інформаційна безпека"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Технічні навички</h2>
+            <ul>
+                <li><strong>ОС:</strong> Arch Linux (пакетні менеджери pacman, yay), Kali Linux.</li>
+                <li><strong>Мережі:</strong> Cisco Packet Tracer, pfSense, налаштування маршрутизації та NAT/PAT.</li>
+                <li><strong>Мови програмування:</strong> C++, Python, PHP, Bash scripting.</li>
+                <li><strong>Інструменти:</strong> Git, QEMU/KVM, Metasploitable.</li>
+            </ul>
+        </section>
+
+        <section id="reviews-section">
+            <h2>Відгуки попередніх роботодавців (API)</h2>
+            <div id="comments-container">
+                <p>Завантаження коментарів...</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Захоплення</h2>
+            <p>Гра на гітарі, настільні ігри, скеледром та активний відпочинок у горах.</p>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <span class="close-modal" id="closeBtn">&times;</span>
+            <h3>Зворотній зв'язок</h3>
+            <form action="https://formspree.io/f/meepndkq" method="POST">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Номер телефону" required>
+                <textarea name="message" rows="4" placeholder="Текст повідомлення" required></textarea>
+                <button type="submit" class="submit-btn">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="site-footer">
+        <hr>
+        <p>Створено в рамках Лабораторних робіт з веб-технологій</p>
+        <div class="debug-info">
+            <strong>LocalStorage Data:</strong>
+            <span id="storage-display"></span>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,3 +1,31 @@
-*.pdf
-vcpkg
-build
+# Складальні файли
+*.o
+*.out
+*.exe
+build/
+bin/
+
+# Веб-технології 
+node_modules/
+.env
+dist/
+
+# Бази даних
+*.log
+*.sqlite
+*.db
+
+# Системне 
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Obsidian 
+.obsidian
+Obsidian
+
+# Virtual 
+Virtual
+Files
+Book

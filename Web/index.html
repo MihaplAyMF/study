@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="side-column">
+            <div class="color-box purple"></div>
+            <div class="color-box blue"></div>
+        </div>
+
+        <div class="form-card">
+            <h1>Реєстрація</h1>
+            
+            <form>
+                <fieldset>
+                    <legend>Інформація</legend>
+                    <input type="text" placeholder="Web">
+                    <input type="password" placeholder="Пароль">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Виберіть стать</legend>
+                    <label><input type="radio" name="gender"> Жінка</label>
+                    <label><input type="radio" name="gender" checked> Чоловік</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Навички</legend>
+                    <label><input type="checkbox" checked> Швидкість</label><br>
+                    <label><input type="checkbox" checked> Сила</label><br>
+                    <label><input type="checkbox" checked> Кмітливість</label><br>
+                    <label><input type="checkbox"> Режим БОГА</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Вік</legend>
+                    <label><input type="radio" name="age" checked> Я старше 18 років</label><br>
+                    <label><input type="radio" name="age"> Мені менше 18 років</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Країна</legend>
+                    <select>
+                        <option>Україна</option>
+                        <option>Польща</option>
+                    </select>
+                </fieldset>
+
+                <textarea placeholder="Опиши свого героя..."></textarea>
+
+                <button type="submit">Створити героя</button>
+            </form>
+        </div>
+
+        <div class="side-column">
+            <div class="color-box orange"></div>
+            <div class="color-box grey"></div>
+        </div>
+    </div>
+
+</body>
+</html>

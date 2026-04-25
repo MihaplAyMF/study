@@ -1,0 +1,83 @@
+/* General page setup with sky and grass background */
+body {
+    background: linear-gradient(to bottom, #a0d8ef 80%, #90c048 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Flexbox for the three main columns */
+.main-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Styling for the side columns (grid of boxes) */
+.side-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.color-box {
+    width: 150px;
+    height: 180px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+/* Different colors for character slots */
+.purple { background-color: #b19cd9; }
+.blue   { background-color: #add8e6; }
+.orange { background-color: #ffb347; }
+.grey   { background-color: #cfcfc4; }
+
+/* The white form container */
+.form-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 { font-size: 20px; margin-bottom: 15px; }
+
+/* Fieldsets and legends styling from the image */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+legend { font-size: 12px; color: #555; }
+
+input[type="text"], input[type="password"], select, textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    box-sizing: border-box; /* Important for width calculation */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea { height: 60px; resize: none; }
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover { background: #eee; }
